@@ -1,0 +1,605 @@
+/* -------------------------------------
+    Dfault style start
+----------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main-color: #283526;
+  --primary-color: #888888;
+  --btn-bg: #4b709e;
+  --primary-btn-bg: #fe7649;
+  --bg-color: #e2efff;
+}
+h1,
+h2,
+h3 {
+  color: var(--main-color);
+  font-family: "Ubuntu", sans-serif;
+}
+h2 {
+  font-size: 3.5rem;
+}
+p {
+  color: var(--primary-color);
+}
+p,
+li,
+a {
+  font-family: "Poppins", sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1150px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+button {
+  padding: 0.7rem 2.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.mt {
+  margin-top: 6rem;
+}
+/* -------------------------------------
+    Dfault style end
+----------------------------------------*/
+/* -------------------------------------
+    Header style start
+----------------------------------------*/
+/* header */
+header {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+header::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: var(--bg-color);
+  border-radius: 6rem 0 0 0;
+  z-index: -1;
+}
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40%;
+  width: 50%;
+  height: 100%;
+  background-image: url("/images/heropage.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+/* header-menu */
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* left-menu */
+.left-menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navber {
+  display: flex;
+}
+.navber li a {
+  margin-left: 1.5rem;
+}
+.navber li a:hover {
+  color: var(--btn-bg);
+  transition: all 1s;
+}
+#logo {
+  width: 130px;
+}
+/* right menu */
+.log-btn {
+  color: var(--primary-color);
+}
+.log-btn:hover {
+  color: var(--btn-bg);
+  transition: all 1s;
+}
+.sign-btn {
+  background: var(--btn-bg);
+  color: #fff;
+  margin-left: 1.5rem;
+}
+.sign-btn:hover {
+  background: #2b496d;
+  transition: all 1s;
+}
+/* header-title */
+.header-title {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.banner-title {
+  font-size: 4.5rem;
+}
+.banner-sub-title {
+  color: var(--primary-color);
+  margin: 2rem 0;
+  line-height: 1.7rem;
+}
+.store-btn {
+  display: flex;
+}
+.flex-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.4rem;
+}
+.store-icon {
+  font-size: 2rem;
+}
+.app {
+  margin-right: 1.5rem;
+}
+.store-text {
+  margin-left: 1rem;
+  text-align: start;
+}
+/* -------------------------------------
+    Header style end
+----------------------------------------*/
+/* -------------------------------------
+    Health app style start
+----------------------------------------*/
+/* health-app-section */
+/* health-app */
+.healthy-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* left-health */
+.left-health {
+  width: 48%;
+  padding: 1rem 0;
+  margin-right: 2%;
+  text-align: end;
+  position: relative;
+  z-index: 2;
+}
+.left-health::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background-color: var(--bg-color);
+  z-index: -2;
+  border-radius: 2rem;
+}
+.health-banner {
+  width: 75%;
+  height: 35rem;
+  margin: 0 auto;
+}
+/* right-health */
+.right-health {
+  width: 50%;
+  padding: 0 0 0 2rem;
+}
+.right-health h2 {
+  font-size: 3.5rem;
+}
+.started-btn {
+  background: var(--primary-btn-bg);
+  color: #fff;
+  margin-right: 1.5rem;
+}
+.started-btn:hover {
+  background: #d35f38;
+  transition: all 1s;
+}
+.work-btn:hover {
+  background: var(--primary-btn-bg);
+  color: #fff;
+  transition: all 1s;
+}
+/* -------------------------------------
+    Health app style end
+----------------------------------------*/
+/* -------------------------------------
+    Tools box style start
+----------------------------------------*/
+/* tools-section */
+.tools-section {
+  background-color: var(--bg-color);
+  padding: 4rem 0;
+}
+/* tools-header */
+.tools-header {
+  text-align: center;
+}
+.tools-header > p {
+  margin: 1.5rem 0;
+}
+/* tools */
+.tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+/* tool */
+.tool {
+  text-align: center;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.tool:hover {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+.tool-img {
+  width: 15rem;
+  height: 15rem;
+  padding: 3rem;
+  transform: rotate(0deg);
+  transition: 1s;
+}
+.tool-img:hover {
+  transform: rotate(360deg);
+  transition: 2s;
+}
+/* -------------------------------------
+    Tools box style end
+----------------------------------------*/
+/* -------------------------------------
+    fitness style start
+----------------------------------------*/
+/* fitness-section */
+/* fitness */
+.fitness {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* left-fitness */
+.left-fitness {
+  width: 50%;
+}
+/* right-fitness */
+.right-fitness {
+  width: 50%;
+}
+/* -------------------------------------
+    fitness style end
+---------------------------------------- */
+/* -------------------------------------
+    Goals style start
+---------------------------------------- */
+/* goals-section */
+/* goals */
+.goals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* left-goals */
+.left-goals {
+  width: 40%;
+  margin-right: 10%;
+}
+/* right-goals */
+.right-goals {
+  width: 50%;
+  padding: 1rem 0;
+}
+.goal-tile {
+  margin-bottom: 2.5rem;
+}
+.goal-tile > h2 {
+  font-size: 2.5rem;
+}
+.goal {
+  margin-bottom: 2.5rem;
+}
+.goal-icon {
+  color: #f75d5d;
+  margin-right: 0.4rem;
+  margin-bottom: 1rem;
+}
+/* -------------------------------------
+    Goals style end
+---------------------------------------- */
+/* -------------------------------------
+    Footer style start
+---------------------------------------- */
+/* footer */
+footer {
+  background: var(--bg-color);
+  padding: 3rem 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* left-footer */
+
+/* right-footer */
+.right-footer {
+  display: flex;
+}
+.right-footer > div {
+  margin-right: 1.5rem;
+}
+/* -------------------------------------
+    Footer style end
+---------------------------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* header style start */
+  /* header */
+  header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    border-radius: 0;
+    z-index: -1;
+  }
+  header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/heropage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+  /* left-menu */
+  .left-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* right-menu */
+  .right-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .log-btn {
+    padding: 0.5rem 0.9rem;
+  }
+  .sign-btn {
+    padding: 0.5rem 0.9rem;
+  }
+  .banner-title {
+    font-size: 3.5rem;
+  }
+  /* header style end */
+  /* healthy app start */
+  .healthy-app {
+    flex-direction: column;
+  }
+  .left-health {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .right-health {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .right-health h2 {
+    font-size: 2.5rem;
+  }
+  /* healthy app end */
+  /* tools box start */
+  /* tools-header */
+  .tools-header > h2 {
+    font-size: 2.5rem;
+  }
+  /* tools */
+  .tools {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+  }
+  /* tool */
+  .tool {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+  .tool:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  }
+  /* tools box end */
+  /* fitness start */
+  /* fitness */
+  .fitness {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* left-fitness */
+  .left-fitness {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .left-fitness > h2 {
+    font-size: 2.5rem;
+  }
+  /* right-fitness */
+  .right-fitness {
+    width: 100%;
+  }
+  /* fitness end */
+  /* goale start */
+  /* goals */
+  .goals {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  /* left-goals */
+  .left-goals {
+    width: 100%;
+  }
+  /* right-goals */
+  .right-goals {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .goal-tile {
+    margin-bottom: 2.5rem;
+  }
+  .goal-tile > h2 {
+    font-size: 2rem;
+  }
+  /* goale end */
+  /* footer */
+  /* right-footer */
+  .right-footer {
+    flex-direction: column;
+  }
+  .right-footer > div {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 912px) {
+  /* header style start */
+  /* header */
+  header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    border-radius: 0;
+    z-index: -1;
+  }
+  header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/heropage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: center;
+    z-index: -1;
+  }
+  /* header style end */
+  /* healthy app start */
+  .healthy-app {
+    flex-direction: column;
+  }
+  .left-health {
+    width: 100%;
+    padding: 1rem 0;
+    margin-right: 2%;
+    text-align: end;
+    position: relative;
+    z-index: 2;
+  }
+  .right-health {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 0 0 2rem;
+  }
+  /* healthy app end */
+  /* tools box start */
+  /* tools-header */
+  /* tools */
+  .tools {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+  }
+  /* tool */
+  .tool {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+  .tool:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  }
+  /* tools box end */
+  /* fitness start */
+  /* fitness */
+  .fitness {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  /* left-fitness */
+  .left-fitness {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  /* right-fitness */
+  .right-fitness {
+    width: 100%;
+  }
+  /* fitness end */
+}
